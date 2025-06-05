@@ -5,25 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Adhi | Portfolio</title>
   <style>
-.social-icons {
-  margin: 1rem 0 1.5rem; /* Top, Right/Left, Bottom */
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-
-.social-icon img {
-  width: 28px;
-  height: 28px;
-  transition: transform 0.3s ease;
-  border-radius: 6px;
-}
-
-.social-icon:hover img {
-  transform: scale(1.2);
-}
 
     * {
       margin: 6; padding: 0; box-sizing: border-box;
@@ -185,22 +166,17 @@ section {
 }
 
     .hero-text h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.3rem;
-    }
+  font-size: 2.8rem;
+  margin-bottom: 0.2rem; /* Reduced from 0.3rem */
+}
 
-    .hero-text h1 span {
-      color: #ffd700;
-      font-weight: 700;
-    }
-
-    .hero-text p {
-      font-size: 1.15rem;
-      margin-bottom: 1.2rem;
-      font-weight: 500;
-      max-width: 600px;
-      line-height: 1.5;
-    }
+.hero-text p {
+  font-size: 1.15rem;
+  margin-bottom: 1rem; /* You can reduce this further if needed */
+  margin-top: 0.2rem;  /* Add this line to close the gap above */
+  font-weight: 500;
+  line-height: 1.4;
+}
 
     .btn {
       display: inline-block;
@@ -603,20 +579,10 @@ nav a {
 </div>
 
       <div class="hero-text">
-  <h1>Hello, I am <span>Adhi</span></h1>
-  <p>A passionate UI/UX Designer and Web Developer crafting visually appealing and user-friendly digital experiences.</p>
-  <div class="social-icons">
-    <a href="https://www.instagram.com/adhiraagshivan?igsh=aHV1eWxvbWp0eGd5" target="_blank" class="social-icon">
-      <img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram">
-    </a>
-    <a href="http://www.youtube.com/@AdhiraagWrites" target="_blank" class="social-icon">
-      <img src="https://img.icons8.com/fluency/48/youtube-play.png" alt="YouTube">
-    </a>
-    <a href="https://www.linkedin.com/in/adinarayana-rameswarapu-1636a7341" target="_blank" class="social-icon">
-      <img src="https://img.icons8.com/fluency/48/linkedin.png" alt="LinkedIn">
-    </a>
-  </div>
-  <button class="btn" id="workTogetherBtn">Let's work together</button>
+  <h1>Hello, I am <span>Adhi </span></h1>
+  <p>A passionate <span id="typed-role" style="color: #ffd700; font-weight: 600;"></span></p>
+
+   <a href="resume.pdf" class="btn" download>Download CV</a>
 </div>
 
     </section>
@@ -860,5 +826,15 @@ function closeCertificate() {
       contactForm.reset();
     });
   </script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed("#typed-role", {
+    strings: ["UI/UX Designer", "Web Developer", "Freelancer", "Graphic Designer"],
+    typeSpeed: 60,
+    backSpeed: 30,
+    loop: true
+  });
+</script>
+
 </body>
 </html>
