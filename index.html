@@ -763,33 +763,15 @@ My journey includes hands-on internships, certifications, and a strong foundatio
          </section>
 
     <!-- CONTACT -->
-    <<section id="contact">
-  <h2>Contact Me</h2>
-  <form action="https://formsubmit.co/adistudentofce@gmail.com" method="POST">
-    
-    <!-- Optional: Disable CAPTCHA -->
-    <input type="hidden" name="_captcha" value="false">
-
-    <!-- Optional: Redirect after submit -->
-    <input type="hidden" name="_next" value="https://ismartadi.github.io/Resume//thank-you.html">
-
-    <!-- Name input -->
-    <label for="name">Name:</label>
-    <input type="text" name="name" id="name" required>
-
-    <!-- Email input -->
-    <label for="email">Email:</label>
-    <input type="email" name="email" id="email" required>
-
-    <!-- Message input -->
-    <label for="message">Message:</label>
-    <textarea name="message" id="message" required></textarea>
-
-    <!-- Submit button -->
-    <button type="submit">Send Message</button>
-  </form>
-</section>
-
+    <section id="contact" aria-label="Contact Me">
+      <h2>Contact</h2>
+      <form id="contactForm" aria-describedby="contactInfo">
+        <input type="text" id="name" name="name" placeholder="Your Name" aria-label="Your Name" required />
+        <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Your Email" required />
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" aria-label="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
   </main>
 
 <!-- Certificate Modal -->
